@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TESTS</title>
+	<link href='https://fonts.googleapis.com/css?family=Playball|Slabo+27px|Kurale&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/build/template.js"></script>
+	<script src="js/build/script.js"></script>
+	<script src="js/build/myscript.js"></script>
+</head>
+<body>
+<script type="text/html" id="test">
+	<div class="wrapper">
+            <h1><%= title %></h1>
+			<% for (var i=0; i < section.length; i++) { %>
+			<p><%= section[i].question %></p>
+				
+				<% for (var j=0; j < section[i].answer.length; j++) { %>
+				<input type="checkbox" id="<%= section[i].id[j] %>"><label for="<%= section[i].id[j] %>"><%= section[i].answer[j] %></label><br><% } %>
+				<% } %>
+			
+				<input type="submit" value="Отправить">
+	</div>
+</script>
+ <div class="hider">
+	<div class="window">
+		<p class="correct">Тест успешно пройден</p>
+		<p class="incorrect">Вы провалили тест - попробуйте снова</p>
+	</div>
+ </div>
+</body>
+</html>

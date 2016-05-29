@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background:#dbdfdd;
+	border: 1px solid transparent;
+}
+.hider{
+	height:100%;
+	width:100%;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	display: none;
+}
+ .window .incorrect{
+	display: none;
+	margin-top: 70px;
+}
+.window .correct{
+	display: none;
+	margin-top: 75px;
+}
+.window{
+	width: 300px;
+	height: 200px;
+	padding: 15px;
+	background: #fff;
+	position: absolute;
+	border-radius: 25px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.window p{
+	display: block;
+	text-align: center;
+	font-size: 25px;
+}
+.wrapper{
+   	margin: auto;
+	margin-top: 50px;
+	padding: 50px 50px;
+	width: 700px;
+	background: white;
+	border: 2px solid #c5c9c7;
+	font-family: 'Playball', cursive;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Kurale', serif;
+	-webkit-box-shadow: 0px 0px 130px 55px rgba(197,201,199,0.94);
+    -moz-box-shadow: 0px 0px 130px 55px rgba(197,201,199,0.94);
+    box-shadow: 0px 0px 130px 55px rgba(197,201,199,0.94);
+}
+label {
+	font-size: 15px;
+	padding-left: 7px;
+}
+
+h1 {
+	text-align:center;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px rgba(39, 32, 69, 0.72);
+	margin-bottom: 30px;
+	font-family: 'Playball', cursive;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Kurale', serif;
+}
+p {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(39, 32, 69, 0.72);
+}
+input[type="checkbox"] {
+	margin-left: 25px;
+}
+
+input[type="submit"] {
+	margin-top: 40px;
+	margin-left: 220px;
+	width: 270px;
+	border-radius: 5px;
+	border: 1px solid #b6b6b6;
+	height: 40px;
+	font-size: 15px;
+	font-family: 'Gloria Hallelujah', cursive, Arial, sans-serif;
+	text-shadow: 1px 1px 2px rgba(39, 32, 69, 0.72);
+}
